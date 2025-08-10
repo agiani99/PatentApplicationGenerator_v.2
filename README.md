@@ -1,4 +1,4 @@
-# Enhanced Universal Patent Generator
+# Universal Patent Generator
 
 This folder contains the **new and improved** patent generation system that solves the "?" symbol problem in Markush structures and works with **any CSV file** containing SMILES data.
 
@@ -126,4 +126,5 @@ images = results['images']
 
 **"No SMILES column found"**
 - Ensure your CSV has a column named `Smiles`, `SMILES`, `smiles`, `smi`, or `SMI`
+
 
