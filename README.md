@@ -2,15 +2,6 @@
 
 This folder contains the **new and improved** patent generation system that solves the "?" symbol problem in Markush structures and works with **any CSV file** containing SMILES data.
 
-## 🎯 **Key Improvements**
-
-### ✅ **Solved Problems**
-- **No more "?" symbols** in Markush structures
-- **Proper R-group labeling** with attachment points
-- **Universal compatibility** with any compound dataset
-- **Multiple visualization methods** for best results
-- **Clean file organization** in dedicated folder
-
 ## 📁 **Files in This Folder**
 
 ### Core Modules
@@ -93,14 +84,6 @@ The system automatically extracts target information from activity column names:
 - `ACT_EGFR_IC50` → Target: EGFR, Disease: Cancer  
 - `ACT_JAK2_IC50` → Target: JAK2, Disease: Autoimmune
 
-## 🖼️ **Image Quality**
-
-### ✅ **What You Get**
-- **Clear molecular structures** without "?" symbols
-- **Proper R-group labels** (R1, R2, R3, etc.)
-- **Professional appearance** suitable for patents
-- **Multiple visualization options** for best results
-
 ## 💡 **Advanced Usage**
 
 ### Python API
@@ -122,9 +105,8 @@ images = results['images']
 
 ## 🔧 **Troubleshooting**
 
-### Common Issues
-
 **"No SMILES column found"**
 - Ensure your CSV has a column named `Smiles`, `SMILES`, `smiles`, `smi`, or `SMI`
+
 
 
