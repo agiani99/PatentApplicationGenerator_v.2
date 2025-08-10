@@ -21,7 +21,7 @@ python universal_patent_runner.py your_compounds.csv
 
 ### With Custom Output Prefix
 ```bash
-python universal_patent_runner.py CDK5_ACT_IC50.csv CDK5_inhibitors
+python universal_patent_runner.py CDK5_ACT.csv CDK5_inhibitors
 ```
 
 ## 📊 **What Gets Generated**
@@ -66,12 +66,12 @@ python universal_patent_runner.py CDK5_ACT_IC50.csv CDK5_inhibitors
 - **SMILES column** (any of: `Smiles`, `SMILES`, `smiles`, `smi`, `SMI`)
 
 ### Optional  
-- **Activity columns** starting with `ACT_` (e.g., `ACT_CDK5_IC50`)
+- **Activity columns** starting with `ACT_` (e.g., `ACT_CDK5`)
 - **Other compound data** (will be included in analysis)
 
 ### Example CSV Structure
 ```csv
-Smiles,ACT_CDK5_IC50,Compound_ID
+Smiles,ACT_CDK5,Compound_ID
 CCOc1ccc(cc1)C(=O)N...,0.123,COMP_001
 CCNc1nc2c(n1)ccc(n2)...,0.456,COMP_002
 ```
@@ -80,9 +80,9 @@ CCNc1nc2c(n1)ccc(n2)...,0.456,COMP_002
 
 The system automatically extracts target information from activity column names:
 
-- `ACT_CDK5_IC50` → Target: CDK5, Disease: Cancer
-- `ACT_EGFR_IC50` → Target: EGFR, Disease: Cancer  
-- `ACT_JAK2_IC50` → Target: JAK2, Disease: Autoimmune
+- `ACT_CDK5` → Target: CDK5, Disease: Cancer
+- `ACT_EGFR` → Target: EGFR, Disease: Cancer  
+- `ACT_JAK2` → Target: JAK2, Disease: Autoimmune
 
 ## 💡 **Advanced Usage**
 
@@ -107,6 +107,7 @@ images = results['images']
 
 **"No SMILES column found"**
 - Ensure your CSV has a column named `Smiles`, `SMILES`, `smiles`, `smi`, or `SMI`
+
 
 
 
